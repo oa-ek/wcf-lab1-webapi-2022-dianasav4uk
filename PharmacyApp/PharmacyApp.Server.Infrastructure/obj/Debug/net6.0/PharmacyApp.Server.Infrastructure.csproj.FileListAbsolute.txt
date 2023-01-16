@@ -1,0 +1,17 @@
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp.Server.Infrastructure\obj\Debug\net6.0\PharmacyApp.Server.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp.Server.Infrastructure\obj\Debug\net6.0\PharmacyApp.Server.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp.Server.Infrastructure\obj\Debug\net6.0\PharmacyApp.Server.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp.Server.Infrastructure\obj\Debug\net6.0\PharmacyApp.Server.Infrastructure.AssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp.Server.Infrastructure\obj\Debug\net6.0\PharmacyApp.Server.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp.Server.Infrastructure\bin\Debug\net6.0\PharmacyApp.Server.Infrastructure.deps.json
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp.Server.Infrastructure\bin\Debug\net6.0\PharmacyApp.Server.Infrastructure.dll
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp.Server.Infrastructure\bin\Debug\net6.0\PharmacyApp.Server.Infrastructure.pdb
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp.Server.Infrastructure\bin\Debug\net6.0\PharmacyApp.Server.Core.dll
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp.Server.Infrastructure\bin\Debug\net6.0\PharmacyApp.Server.Core.pdb
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp.Server.Infrastructure\obj\Debug\net6.0\PharmacyApp.Server.Infrastructure.csproj.CopyComplete
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp.Server.Infrastructure\obj\Debug\net6.0\PharmacyApp.Server.Infrastructure.dll
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp.Server.Infrastructure\obj\Debug\net6.0\refint\PharmacyApp.Server.Infrastructure.dll
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp.Server.Infrastructure\obj\Debug\net6.0\PharmacyApp.Server.Infrastructure.pdb
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp.Server.Infrastructure\obj\Debug\net6.0\ref\PharmacyApp.Server.Infrastructure.dll
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp.Server.Infrastructure\bin\Debug\net6.0\PharmacyApp.Shared.dll
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp.Server.Infrastructure\bin\Debug\net6.0\PharmacyApp.Shared.pdb

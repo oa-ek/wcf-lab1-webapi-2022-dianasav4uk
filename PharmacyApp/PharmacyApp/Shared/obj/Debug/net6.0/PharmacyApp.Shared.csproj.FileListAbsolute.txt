@@ -1,0 +1,12 @@
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp\Shared\bin\Debug\net6.0\PharmacyApp.Shared.deps.json
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp\Shared\bin\Debug\net6.0\PharmacyApp.Shared.dll
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp\Shared\bin\Debug\net6.0\PharmacyApp.Shared.pdb
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp\Shared\obj\Debug\net6.0\PharmacyApp.Shared.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp\Shared\obj\Debug\net6.0\PharmacyApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp\Shared\obj\Debug\net6.0\PharmacyApp.Shared.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp\Shared\obj\Debug\net6.0\PharmacyApp.Shared.AssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp\Shared\obj\Debug\net6.0\PharmacyApp.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp\Shared\obj\Debug\net6.0\PharmacyApp.Shared.dll
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp\Shared\obj\Debug\net6.0\refint\PharmacyApp.Shared.dll
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp\Shared\obj\Debug\net6.0\PharmacyApp.Shared.pdb
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp\Shared\obj\Debug\net6.0\ref\PharmacyApp.Shared.dll

@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PharmacyApp.Server", "PharmacyApp\Server\PharmacyApp.Server.csproj", "{64C1A9E3-084B-44E9-BC36-E6AF6A36757B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PharmacyApp.Client", "PharmacyApp\Client\PharmacyApp.Client.csproj", "{43F9B5EA-72D8-4134-9471-B77E3F81251A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PharmacyApp.Shared", "PharmacyApp\Shared\PharmacyApp.Shared.csproj", "{D16D1151-FDF5-4041-AAAE-AFF20DE731EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{10526E0E-792B-4A23-BC91-AED8F2BE8563}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{CC68878D-C810-445D-83C9-DF725C008169}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PharmacyApp.Server.Core", "PharmacyApp.Server.Core\PharmacyApp.Server.Core.csproj", "{DC51DBCD-2233-4C9C-B133-26BFC88E9FC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PharmacyApp.Server.Infrastructure", "PharmacyApp.Server.Infrastructure\PharmacyApp.Server.Infrastructure.csproj", "{158DE477-2E8C-4D68-A2FE-A0A22B93F18A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64C1A9E3-084B-44E9-BC36-E6AF6A36757B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64C1A9E3-084B-44E9-BC36-E6AF6A36757B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64C1A9E3-084B-44E9-BC36-E6AF6A36757B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64C1A9E3-084B-44E9-BC36-E6AF6A36757B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43F9B5EA-72D8-4134-9471-B77E3F81251A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43F9B5EA-72D8-4134-9471-B77E3F81251A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43F9B5EA-72D8-4134-9471-B77E3F81251A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43F9B5EA-72D8-4134-9471-B77E3F81251A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D16D1151-FDF5-4041-AAAE-AFF20DE731EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D16D1151-FDF5-4041-AAAE-AFF20DE731EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D16D1151-FDF5-4041-AAAE-AFF20DE731EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D16D1151-FDF5-4041-AAAE-AFF20DE731EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC51DBCD-2233-4C9C-B133-26BFC88E9FC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC51DBCD-2233-4C9C-B133-26BFC88E9FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC51DBCD-2233-4C9C-B133-26BFC88E9FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC51DBCD-2233-4C9C-B133-26BFC88E9FC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{158DE477-2E8C-4D68-A2FE-A0A22B93F18A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{158DE477-2E8C-4D68-A2FE-A0A22B93F18A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{158DE477-2E8C-4D68-A2FE-A0A22B93F18A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{158DE477-2E8C-4D68-A2FE-A0A22B93F18A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{64C1A9E3-084B-44E9-BC36-E6AF6A36757B} = {10526E0E-792B-4A23-BC91-AED8F2BE8563}
+		{43F9B5EA-72D8-4134-9471-B77E3F81251A} = {CC68878D-C810-445D-83C9-DF725C008169}
+		{DC51DBCD-2233-4C9C-B133-26BFC88E9FC3} = {10526E0E-792B-4A23-BC91-AED8F2BE8563}
+		{158DE477-2E8C-4D68-A2FE-A0A22B93F18A} = {10526E0E-792B-4A23-BC91-AED8F2BE8563}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D6D0A187-24D7-4A88-8D3B-FA912EA09397}
+	EndGlobalSection
+EndGlobal
