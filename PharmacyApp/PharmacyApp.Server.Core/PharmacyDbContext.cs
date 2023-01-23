@@ -8,11 +8,13 @@ namespace PharmacyApp.Server.Core
         public PharmacyDbContext(DbContextOptions<PharmacyDbContext> options)
             : base(options)
         {
+            
         }
-
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            
+            builder.Seed();
+            builder.Seed1();
+            base.OnModelCreating(builder);
         }
         
         public DbSet<Category> Category { get; set; }

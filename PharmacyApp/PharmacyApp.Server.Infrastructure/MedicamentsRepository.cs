@@ -15,11 +15,14 @@ namespace PharmacyApp.Server.Infrastructure
     {
         private readonly PharmacyDbContext _ctx;
         private readonly SubCategoryMedicamentsRepository subCategoryMedicamentsRepos;
+        private readonly SubCategoryRepository _subCategoryRepository;
 
-        public MedicamentsRepository(PharmacyDbContext ctx, SubCategoryMedicamentsRepository subCategoryMedicamentsRepos)
+        public MedicamentsRepository(PharmacyDbContext ctx, SubCategoryMedicamentsRepository subCategoryMedicamentsRepos,
+            SubCategoryRepository subCategoryRepository)
         {
             _ctx = ctx;
             this.subCategoryMedicamentsRepos = subCategoryMedicamentsRepos;
+            this._subCategoryRepository = subCategoryRepository;
         }
         public Medicaments GetMedicament(int id)
         {
@@ -88,8 +91,20 @@ namespace PharmacyApp.Server.Infrastructure
             return medicamentsListDto;
         }
 
-        public MedicamentsDto MedicamentDto(Medicaments med)
+        public async Task<MedicamentsDto> MedicamentDtoAsync(Medicaments med)
         {
+           var SubCategories = new List<string>();
+            var scats = await subCategoryMedicamentsRepos.GetSubCategoriesMedicament(med.MedicamentsId);
+            var subcategories = new List<SubCategory>();
+            foreach (var s in scats)
+            {
+                subcategories.Add(await _subCategoryRepository.GetSubCategory(s.SubCategoryId));
+            }
+           foreach (var s in subcategories)
+            {
+                SubCategories.Add(s.Name);
+            }
+
             var medicamentDto = new MedicamentsDto();
             
                 medicamentDto = new MedicamentsDto
@@ -102,6 +117,7 @@ namespace PharmacyApp.Server.Infrastructure
                     ReleaseForm = med.ReleaseForm,
                     Dosage = med.Dosage,
                     Description = med.Description,
+                    Subcategory = SubCategories,
                 };
             return medicamentDto;
         }
@@ -206,7 +222,7 @@ namespace PharmacyApp.Server.Infrastructure
             return await _ctx.Medicaments.FirstAsync(x => x.Code == code);
             //return newMd;
         }
-        public async Task<Medicaments> AddMedicamentByDto(MedicamentsDto medDto)
+        /*public async Task<Medicaments> AddMedicamentByDto(MedicamentsDto medDto)
         {
             var med = new Medicaments();
             med.Name = medDto.Name;
@@ -219,6 +235,6 @@ namespace PharmacyApp.Server.Infrastructure
             _ctx.Medicaments.Add(med);
             await _ctx.SaveChangesAsync();
             return _ctx.Medicaments.FirstOrDefault(x => x.Name == medDto.Name);
-        }
+        }*/
     }
 }

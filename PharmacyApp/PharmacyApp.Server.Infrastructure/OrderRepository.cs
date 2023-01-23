@@ -148,7 +148,7 @@ namespace PharmacyApp.Server.Infrastructure
 
             return orderDto;
         }
-        public List<OrderItemsDto> OrderItemsDto(List<OrderItems> orderitems)
+        public async Task<List<OrderItemsDto>> OrderItemsDtoAsync(List<OrderItems> orderitems)
         {
             var ordersDto = new List<OrderItemsDto>();
             foreach (var item in orderitems)
@@ -157,7 +157,7 @@ namespace PharmacyApp.Server.Infrastructure
                 orderitemsDto.OrderDetailsId = item.OrderDetailsId;
                 orderitemsDto.Quantity = item.Quantity;
                 orderitemsDto.Price = item.Price;
-                orderitemsDto.medicaments = _medicamentsRepository.MedicamentDto(item.medicaments);
+                orderitemsDto.medicaments = await _medicamentsRepository.MedicamentDtoAsync(item.medicaments);
                 ordersDto.Add(orderitemsDto);
             }
             return ordersDto;
@@ -168,7 +168,7 @@ namespace PharmacyApp.Server.Infrastructure
             var orderDto = new OrderDto();
             orderDto.OrderId = order.OrderId;
             orderDto.Address = OrderAddressDto(order.details.Address);
-            orderDto.orderItems = OrderItemsDto(order.details.orderItems);
+            orderDto.orderItems = await OrderItemsDtoAsync(order.details.orderItems);
             orderDto.Total = order.details.Total;
             orderDto.TypeOfDelivery = order.details.TypeOfDelivery;
             orderDto.Payment = order.details.Payment;

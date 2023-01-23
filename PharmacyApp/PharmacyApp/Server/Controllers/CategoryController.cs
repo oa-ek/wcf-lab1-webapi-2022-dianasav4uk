@@ -57,17 +57,18 @@ namespace PharmacyApp.Server.Controllers
         public async Task<List<MedicamentsDto>> CategoryProducts(int id)
         {
             //Medicaments med = await _medicamentsRepository.GetMedicament(id);
-            List<ShopCartItem> cart = HttpContext.Session.GetJson<List<ShopCartItem>>("Cart") ?? new List<ShopCartItem>();
-            HttpContext.Session.SetJson("Cart", cart);
+            //List<ShopCartItem> cart = HttpContext.Session.GetJson<List<ShopCartItem>>("Cart") ?? new List<ShopCartItem>();
+            //HttpContext.Session.SetJson("Cart", cart);
 
             //ViewData["id"] = id;
             var subcategory = await _subcategoryRepository.GetSubCategory(id);
-            var medicaments = await _subcategorymedicamentsRepository.GetAllMedicamentsFromSubCategory(subcategory.SubCategoryId);
+            var medicamentsSub = await _subcategorymedicamentsRepository.GetAllMedicamentsFromSubCategory(subcategory.SubCategoryId);
             //ViewData["title"] = subcategory.Name;
             // ViewData["subcategory"] = subcategory.SubCategoryId;
             //ViewBag.CartItem = cart;
-            var listMeds = await _medicamentsRepository.ListMedicamentsDto(medicaments);
-            return listMeds;
+            var list = await _medicamentsRepository.ListMedicamentsDto(medicamentsSub);
+            //var meds = await _medicamentsRepository.MedicamentsDto(list);
+            return list;
         }
 
         //Return all MEDICAMENTS from CATEGORY

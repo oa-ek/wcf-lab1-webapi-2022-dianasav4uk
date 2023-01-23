@@ -2,6 +2,7 @@
 using PharmacyApp.Server.Core;
 using PharmacyApp.Server.Infrastructure;
 using PharmacyApp.Shared.Dto;
+using System.IO;
 
 namespace PharmacyApp.Server.Controllers
 {
@@ -36,16 +37,25 @@ namespace PharmacyApp.Server.Controllers
         {
             ViewBag.returnUrl = Request.Headers["Referer"].ToString();
             var details = await _medicamentsRepository.InfoMedicaments(id);
-            var info = _medicamentsRepository.MedicamentDto(details);
+            var info = await _medicamentsRepository.MedicamentDtoAsync(details);
             return info;
         }
 
         //Create Medicament
         [HttpPost]
-        public async Task<Medicaments> Create(MedicamentsDto medDto)
+        public async Task<MedicamentsDto> Create(MedicamentsDto model)
         {
-            var createdMed = await _medicamentsRepository.AddMedicamentByDto(medDto);
-            return createdMed;
+            var listsubcategory = new List<SubCategory>();
+
+            foreach (var i in model.Subcategory)
+            {
+                listsubcategory.Add(await _subcategoryRepository.GetSubCategoryS(i));
+            }
+
+            Medicaments md = await _medicamentsRepository.Create(model.Name, model.Code, model.Price, model.ReleaseForm, model.Dosage, model.Image, model.Description);
+            await _subcategorymedicamentsRepository.AddToSubCategory(md, listsubcategory);
+            var med = await _medicamentsRepository.MedicamentDtoAsync(md);
+            return med;
         }
 
 

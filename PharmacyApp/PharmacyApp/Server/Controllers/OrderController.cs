@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PharmacyApp.Server.Core;
 using PharmacyApp.Server.Infrastructure;
 using PharmacyApp.Shared.Dto;
+using Microsoft.AspNetCore.Mvc.ActionConstraints;
 
 namespace PharmacyApp.Server.Controllers
 {
@@ -22,26 +24,26 @@ namespace PharmacyApp.Server.Controllers
         }
 
         [HttpPost]
-        public List<ShopCartItem> FormOrder()
+        public IActionResult FormOrder()
         {
             List<ShopCartItem> cart = HttpContext.Session.GetJson<List<ShopCartItem>>("Cart");
-            return cart;
+            return RedirectToAction("CreateOrder","Cart");
         }
 
-        [HttpPost]
-        public async Task<Order> Create(OrderDetails orderDetails)
+        [HttpGet("{orderDetails}")]
+        public async Task<OrderDto> Create(int id)
         {
             List<ShopCartItem> cart = HttpContext.Session.GetJson<List<ShopCartItem>>("Cart");
             //var user = await _usersRepository.GetCurrentUser();
-            //ar od = _orderRepository.GetOrderDetails(orderDetails);
-            Order order = await _orderRepository.CreateOrder(cart, orderDetails);
+            var od = await _orderRepository.GetOrderDetails(id);
+            Order order = await _orderRepository.CreateOrder(cart, od);
             //Order order = await _orderRepository.GetOrderUser(user);
-            return order;
+            var Order = await _orderRepository.OrderCreateDto(order);
+            return Order;
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<OrderDetails> CreateOrder(string Address, string payment, string phone, string name, string email, string typeofdelivery)
+        public async Task<IActionResult> CreateOrder(string Address, string payment, string phone, string name, string email, string typeofdelivery)
         {
             List<ShopCartItem> cart = HttpContext.Session.GetJson<List<ShopCartItem>>("Cart");
             OrderDetails d = await _orderRepository.CreateOrderDetails();
@@ -64,7 +66,9 @@ namespace PharmacyApp.Server.Controllers
 
             await _orderRepository.AddItems(d.Id, orderitems, total);
             await _orderRepository.AddInfo(d.Id, Address, email, phone, name, payment, typeofdelivery);
-            return d;
+            var details = await _orderRepository.GetOrderDetails(d.Id);
+            return RedirectToAction("Create", details.Id);
+            //return d;
         }
 
         [HttpGet("{id}")]

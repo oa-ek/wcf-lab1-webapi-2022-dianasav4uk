@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "PharmacyApp.Server.Infrastructure/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "PharmacyApp.Server.Core": "1.0.0",
           "PharmacyApp.Shared": "1.0.0"
         },

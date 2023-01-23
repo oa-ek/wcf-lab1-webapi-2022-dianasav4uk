@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\PharmacyApp.Server.Core\PharmacyApp.Server.Core.csproj" />
     <ProjectReference Include="..\PharmacyApp\Shared\PharmacyApp.Shared.csproj" />
   </ItemGroup>

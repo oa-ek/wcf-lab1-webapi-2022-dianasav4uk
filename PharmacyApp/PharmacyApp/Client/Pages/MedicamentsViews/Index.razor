@@ -1,0 +1,26 @@
+﻿@page "/category"
+@using PharmacyApp.Shared.Dto;
+@using PharmacyApp.Client.Pages;
+@inject HttpClient Http
+
+
+<tbody>
+    <div class="container row">
+        @foreach (var item in catalog)
+        {
+            <div class="col-md-4">              
+
+              <a class="btn btn-outline-secondary" href="/@item.Id">@item.Name</a>
+                                
+            </div>
+        }
+    </div>
+</tbody>
+
+@code {
+    List<CatalogDto> catalog = new List<CatalogDto>();
+    protected override async Task OnInitializedAsync()
+    {
+        catalog = await Http.GetFromJsonAsync<List<CatalogDto>>("api/Category/GetCatalogDto");
+    }
+}

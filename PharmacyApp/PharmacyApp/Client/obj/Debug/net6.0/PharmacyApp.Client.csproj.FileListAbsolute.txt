@@ -825,3 +825,7 @@ C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\Pha
 C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp\Client\obj\Debug\net6.0\refint\PharmacyApp.Client.dll
 C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp\Client\obj\Debug\net6.0\PharmacyApp.Client.pdb
 C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp\Client\obj\Debug\net6.0\ref\PharmacyApp.Client.dll
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp\Client\bin\Debug\net6.0\wwwroot\_framework\Microsoft.AspNetCore.Http.Features.dll.gz
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp\Client\bin\Debug\net6.0\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Admin\Documents\GitHub\wcf-lab1-webapi-2022-dianasav4uk\PharmacyApp\PharmacyApp\Client\obj\Debug\net6.0\build-gz\j16I51Ch.gz

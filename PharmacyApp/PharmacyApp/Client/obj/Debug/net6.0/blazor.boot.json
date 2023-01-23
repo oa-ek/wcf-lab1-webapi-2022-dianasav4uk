@@ -12,6 +12,7 @@
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-sfS5IbIUmHlbq+IYA0kCaqZP3A4mW9Db27+02FHezQg=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-S1xltauXSvwtrfRfttJgmFlN0Vity8xM7gZyCf1Be+s=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-SH\/uEmGgriHZGC6KXNvAU\/VuzRd1s+D54B4ovMz7EWU=",
+      "Microsoft.AspNetCore.Http.Features.dll": "sha256-nhDtQDkvXQUWiexwW5atxrEm6abFLbvzeVCl\/Gb5kvI=",
       "Microsoft.AspNetCore.Metadata.dll": "sha256-K3FoLKXSEzoky5knG0YNJtSbJeUnWnZojUlEIM7jV8E=",
       "Microsoft.Extensions.Configuration.dll": "sha256-c8yYhfrOBLEnOBglLTu9peXSbJDwFpuT4UQiXSv28Og=",
       "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-5Otet+KKVUjNkE\/hqcNWmt75H1K2VNuKPFagpRd6Ces=",
@@ -196,15 +197,15 @@
       "mscorlib.dll": "sha256-TYLzIm125RbnX9+RAPqJnwZhd6CnQpJcrjiMpJfZ720=",
       "netstandard.dll": "sha256-HhuK9zDkd1N7hODAEiNJ11VF8T54IgrM6hZfLHmHdqM=",
       "System.Private.CoreLib.dll": "sha256-dXaTqyg1PnXPiSwywpic1PVrd7P8Vb5tN0i0\/urdt3E=",
-      "PharmacyApp.Shared.dll": "sha256-UFvPw+Urtxv+ptHzoNK91blUIg\/NsjVCNbYcj9i9d3E=",
-      "PharmacyApp.Client.dll": "sha256-i0694csQxwb38VUR3exgwxYnvEVn+Q0drsfYUL8qQoo="
+      "PharmacyApp.Shared.dll": "sha256-w7pU3LKf7gx07y8Vg\/Osfx8SD97+YC574JztrCyRb4I=",
+      "PharmacyApp.Client.dll": "sha256-VXOvjUn73NSy5nBr6wvZqJz3DMoDawW0fF6ppOQyg54="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "PharmacyApp.Shared.pdb": "sha256-NB5RsBY1qyOviY90fqR8QH84tGJ8FSj1pxXOSJ+FwOM=",
-      "PharmacyApp.Client.pdb": "sha256-IVB5BYL4QhM0NJgxOWGsagBsZr\/5xJV7iUhPdTBCWF4="
+      "PharmacyApp.Shared.pdb": "sha256-L9hUe0H1LCx6QvxKx4yoh9ftXOnXkeJpst\/T6TGhmyg=",
+      "PharmacyApp.Client.pdb": "sha256-04WGy7+7hwaEGdp5MAiV8RcpiCMS2AqNv31YFaffHhc="
     },
     "runtime": {
       "dotnet.6.0.8.pwypv4423s.js": "sha256-WT60vnXnQtCNURE40qo+XSL1o4iYFvABy0NVaFhm7MI=",

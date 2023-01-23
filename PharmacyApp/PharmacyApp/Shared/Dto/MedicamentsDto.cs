@@ -26,6 +26,7 @@ namespace PharmacyApp.Shared.Dto
         public string Dosage { get; set; }
         [Display(Name = "Опис")]
         public string? Description { get; set; }
+        public List<string>? Subcategory { get; set; }
        
     }
 }
