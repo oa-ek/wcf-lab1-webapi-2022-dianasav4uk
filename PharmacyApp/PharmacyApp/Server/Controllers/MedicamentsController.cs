@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.JsonPatch.Internal;
+using Microsoft.AspNetCore.Mvc;
 using PharmacyApp.Server.Core;
 using PharmacyApp.Server.Infrastructure;
 using PharmacyApp.Shared.Dto;
@@ -7,7 +8,7 @@ using System.IO;
 namespace PharmacyApp.Server.Controllers
 {
     [ApiController]
-    [Route("api/[controller]/[action]")]
+    [Route("api/[controller]")]
     public class MedicamentsController : Controller
     {
         private readonly PharmacyDbContext _dbcontext;
@@ -77,6 +78,12 @@ namespace PharmacyApp.Server.Controllers
             await _medicamentsRepository.DeleteMedicament(id);
         }
 
+        [HttpGet]
+        public async Task<List<MedicamentsDto>> GetAllMeds()
+        {
+            var meds = await _medicamentsRepository.GetAllMedicaments();
+            return await _medicamentsRepository.MedicamentsDto(meds);
+        }
 
     }
 }

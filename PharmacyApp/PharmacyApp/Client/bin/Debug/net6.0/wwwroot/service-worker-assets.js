@@ -869,6 +869,10 @@
       "url": "_framework\/Microsoft.AspNetCore.Components.WebAssembly.dll"
     },
     {
+      "hash": "sha256-nhDtQDkvXQUWiexwW5atxrEm6abFLbvzeVCl\/Gb5kvI=",
+      "url": "_framework\/Microsoft.AspNetCore.Http.Features.dll"
+    },
+    {
       "hash": "sha256-K3FoLKXSEzoky5knG0YNJtSbJeUnWnZojUlEIM7jV8E=",
       "url": "_framework\/Microsoft.AspNetCore.Metadata.dll"
     },
@@ -1641,11 +1645,11 @@
       "url": "_framework\/PharmacyApp.Shared.pdb"
     },
     {
-      "hash": "sha256-6khqLgA4nVILpCMMfwvLnoKCZOvxFXxngPT7XpSZetc=",
+      "hash": "sha256-JBVjvCj6pQW9GVhUUmAMHF+gkjKK4ovqvoD361i6OiI=",
       "url": "_framework\/PharmacyApp.Client.dll"
     },
     {
-      "hash": "sha256-0n3C+hRg4zVX5yiaYFd5HQ+xd99fdi5XJZm6aHAS5J0=",
+      "hash": "sha256-Gpb3X4fa6Fs9yLnLRS+IIFzgt9LqQmGszNGjdH\/3RcU=",
       "url": "_framework\/PharmacyApp.Client.pdb"
     },
     {
@@ -1653,13 +1657,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-PHjNlFB53DaTPR9hjky4fREY3AMBXTsKCHyVBt35eQE=",
+      "hash": "sha256-4eLw905a9HpksR+SCybGdGpM4XMZetGUNS3RGl1Tg4A=",
       "url": "_framework\/blazor.boot.json"
-    },
-    {
-      "hash": "sha256-nhDtQDkvXQUWiexwW5atxrEm6abFLbvzeVCl\/Gb5kvI=",
-      "url": "_framework\/Microsoft.AspNetCore.Http.Features.dll"
     }
   ],
-  "version": "l2+7h2Nm"
+  "version": "og8GTMIG"
 };

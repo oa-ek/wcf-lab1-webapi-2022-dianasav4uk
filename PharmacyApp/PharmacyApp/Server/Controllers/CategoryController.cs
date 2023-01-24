@@ -8,7 +8,7 @@ using System.Diagnostics;
 namespace PharmacyApp.Server.Controllers
 {
     [ApiController]
-    [Route("api/[controller]/[action]")]
+    [Route("api/[controller]")]
     public class CategoryController : ControllerBase
     {
         private readonly PharmacyDbContext _dbcontext;

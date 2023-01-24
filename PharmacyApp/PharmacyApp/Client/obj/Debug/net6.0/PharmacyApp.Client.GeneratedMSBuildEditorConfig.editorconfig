@@ -30,8 +30,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/GitHub/wcf-lab1-webapi-2022-dianasav4uk/PharmacyApp/PharmacyApp/Client/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+[C:/Users/Admin/Documents/GitHub/wcf-lab1-webapi-2022-dianasav4uk/PharmacyApp/PharmacyApp/Client/Pages/MedicamentsViews/Categories.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNhbWVudHNWaWV3c1xDYXRlZ29yaWVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/wcf-lab1-webapi-2022-dianasav4uk/PharmacyApp/PharmacyApp/Client/Pages/MedicamentsViews/DeleteCategory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNhbWVudHNWaWV3c1xEZWxldGVDYXRlZ29yeS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/wcf-lab1-webapi-2022-dianasav4uk/PharmacyApp/PharmacyApp/Client/Pages/MedicamentsViews/DeleteMed.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVkaWNhbWVudHNWaWV3c1xEZWxldGVNZWQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/Documents/GitHub/wcf-lab1-webapi-2022-dianasav4uk/PharmacyApp/PharmacyApp/Client/Pages/MedicamentsViews/Index.razor]

@@ -1,26 +1,46 @@
-﻿@page "/category"
-@using PharmacyApp.Shared.Dto;
-@using PharmacyApp.Client.Pages;
+﻿@page "/Medicaments/index"
 @inject HttpClient Http
+@using PharmacyApp.Shared.Dto;
+<div class="">
+    <a class="btn btn-sm btn-outline-danger" href="/medicaments/new">Додати медикаменти</a>
+</div>
+<br />
+<h3>Медикаменти</h3>
 
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
 
-<tbody>
-    <div class="container row">
-        @foreach (var item in catalog)
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in medicaments)
         {
-            <div class="col-md-4">              
+            <tr>
+                <td><img class="rounded" src="@item.Image" alt="@item.Image" style="max-height:100px;"></td>
+                <td>@item.Name</td>
+                <td>
 
-              <a class="btn btn-outline-secondary" href="/@item.Id">@item.Name</a>
-                                
-            </div>
+                    <a class="btn btn-sm btn-outline-secondary" href="/medicaments/edit/@item.MedicamentsId">
+                        <i class="oi oi-pencil"></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-danger" href="/medicaments/delete/@item.MedicamentsId">
+                        <i class="oi oi-delete"></i>
+                    </a>
+
+                </td>
+            </tr>
         }
-    </div>
-</tbody>
+    </tbody>
+</table>
 
 @code {
-    List<CatalogDto> catalog = new List<CatalogDto>();
+    List<MedicamentsDto> medicaments = new List<MedicamentsDto>();
     protected override async Task OnInitializedAsync()
     {
-        catalog = await Http.GetFromJsonAsync<List<CatalogDto>>("api/Category/GetCatalogDto");
+        medicaments = await Http.GetFromJsonAsync<List<MedicamentsDto>>("api/Medicaments/");
     }
 }

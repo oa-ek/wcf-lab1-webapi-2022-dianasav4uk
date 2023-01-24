@@ -1,0 +1,28 @@
+﻿@page "/category/delete/{id:int}"
+@inject HttpClient Http
+@inject NavigationManager Navigation
+
+@using PharmacyApp.Shared.Dto;
+
+
+<h3>Ви впевнені що хочете видалити цей медикамент?</h3>
+<hr />
+<EditForm Model="Id" OnSubmit="Delete">
+    <div class="col-12">
+        <button type="submit" class="btn btn-sm btn-outline-danger">Так</button>
+    </div>
+</EditForm>
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    public async Task Delete()
+    {
+        var result = await Http.DeleteAsync($"api/Category/{Id}");
+        if (result.IsSuccessStatusCode)
+        {
+            Navigation.NavigateTo("/");
+        }
+    }
+
+}
